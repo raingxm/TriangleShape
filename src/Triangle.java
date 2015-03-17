@@ -8,6 +8,12 @@ public class Triangle {
         this.height = height;
     }
 
+    public Triangle(int side) {
+        if(side <= 0) throw new RuntimeException();
+        this.width = side;
+        this.height = side;
+    }
+
     public double getWidth() {
         return width;
     }

@@ -34,4 +34,11 @@ public class TriangleTest {
     public void shouldThrowExceptionWhenWidthOrHeightBeNegativeNum() {
         Triangle triangle = new Triangle(-2.3, 8);
     }
+
+    @Test
+    public void shouldSquareIsSpecialTriangle() {
+        Triangle triangle = new Triangle(5);
+        assertThat(triangle.getWidth(), is(5.0));
+        assertThat(triangle.getHeight(), is(5.0));
+    }
 }
