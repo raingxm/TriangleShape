@@ -1,17 +1,21 @@
 public class Triangle {
-    private final int width;
-    private final int height;
+    private final double width;
+    private final double height;
 
-    public Triangle(int width, int height) {
+    public Triangle(double width, double height) {
         this.width = width;
         this.height = height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
+    }
+
+    public double calculateArea() {
+        return width * height;
     }
 }
