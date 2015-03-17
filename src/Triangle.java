@@ -3,6 +3,7 @@ public class Triangle {
     private final double height;
 
     public Triangle(double width, double height) {
+        if(width <= 0 || height <= 0) throw new RuntimeException();
         this.width = width;
         this.height = height;
     }
@@ -17,5 +18,9 @@ public class Triangle {
 
     public double calculateArea() {
         return width * height;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * (width + height);
     }
 }
